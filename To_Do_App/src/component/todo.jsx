@@ -45,9 +45,7 @@ function Todo() {
         
       </form>
 
-      <div>
-      <button onClick={deleteAll}>delete</button>
-      </div>
+      
 
       <ul>
         {items.map((data, index) => (
@@ -57,6 +55,10 @@ function Todo() {
           </li>
         ))}
       </ul>
+
+      <div>
+      <button onClick={deleteAll}>Clear</button>
+      </div>
     </div>
   )
 }
